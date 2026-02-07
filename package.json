@@ -1,0 +1,21 @@
+{
+  "name": "ar3lyx",
+  "version": "1.0.0",
+  "description": "Y toca hacer algo de musica dude",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArelyX1/AR3LYX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ArelyX1/AR3LYX/issues"
+  },
+  "homepage": "https://github.com/ArelyX1/AR3LYX#readme"
+}
