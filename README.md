@@ -1,2 +1,2 @@
 # AR3LYX
-Y toca hacer algo de musica dude
+I develop custom workspaces for cutting-edge designs, integrating Three.js and TouchDesigner with Meyda for real-time audio analysis
