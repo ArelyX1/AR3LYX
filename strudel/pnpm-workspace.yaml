@@ -1,0 +1,13 @@
+packages:
+  - packages/*
+  - examples/*
+  - tools/dbpatch
+  - website/
+
+onlyBuiltDependencies:
+  - '@serialport/bindings-cpp'
+  - esbuild
+  - nx
+  - sharp
+  - tree-sitter
+  - tree-sitter-haskell
