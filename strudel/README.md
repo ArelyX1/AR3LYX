@@ -37,6 +37,43 @@ You will need to abide by the terms of the [GNU Affero Public Licence v3](LICENS
 
 Licensing info for the default sound banks can be found over on the [dough-samples](https://github.com/felixroos/dough-samples/blob/main/README.md) repository.
 
+## Para Testers (Frontend)
+
+Si vas a probar la interfaz visual (página principal, editor, layout), aquí tienes lo básico:
+
+### Estructura de archivos que te interesan
+- **Astro** (página principal): `website/src/pages/` y `website/src/layouts/`
+- **React / JSX** (editor REPL): `packages/repl/` y `packages/codemirror/`
+- **Componentes**: `website/src/components/` contiene componentes en `.jsx`, `.tsx`, `.js`, `.ts`
+
+### Cómo ejecutar para probar manualmente
+```bash
+pnpm i   # instalar dependencias
+pnpm dev # abre la página en http://localhost:3000
+```
+
+### Qué probar (básico)
+- **Layout de la página principal**: que se vea bien, botones funcionen, navegación
+- **Editor (REPL)**: escribir código, ejecutar (Ctrl+Enter), que suene
+- **Interfaz en general**: menús, botones de play/stop, cambios de tema
+
+### Sobre los archivos de prueba (tests)
+Los tests automáticos están en `packages/*/test/` y usan Vitest. Aunque muchos archivos tienen extensión `.mjs`, tú puedes escribir tests en formatos que ya conoces:
+- `.test.js` o `.spec.js`
+- `.test.jsx` o `.spec.jsx`
+- `.test.tsx` o `.spec.tsx`
+
+Para correr todos los tests automáticos:
+```bash
+pnpm test
+```
+
+### Comandos útiles
+```bash
+pnpm lint   # revisa errores de código
+pnpm check  # formato + lint + tests
+```
+
 ## Contributing
 
 There are many ways to contribute to this project! See [contribution guide](./CONTRIBUTING.md). You can find the full list of contributors [here](https://codeberg.org/uzu/strudel/activity/contributors).
