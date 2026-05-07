@@ -37,13 +37,6 @@ pnpm i
 
 ## Página Principal - Archivos Importantes
 
-### Entrada y Carga
-| Archivo | Propósito |
-|---------|-----------|
-| `website/src/pages/index.astro` | **Página de entrada** - Carga el REPL principal |
-| `website/src/pages/init.js` | Inicialización de la app en el navegador |
-| `website/astro.config.mjs` | Configuración de Astro (React, MDX, Tailwind, PWA) |
-
 ### Componente Principal del REPL
 `website/src/repl/Repl.jsx` - **El corazón de la aplicación**
 
@@ -91,26 +84,6 @@ Ubicados en `website/src/repl/three/`:
 - `website/src/styles/index.css` - Estilos globales
 - `website/tailwind.config.cjs` - Configuración Tailwind
 
----
-
-## Paquetes del Monorepo (packages/)
-
-Estos paquetes conforman la lógica de sonido y procesamiento:
-
-| Paquete | Descripción | Ubicación |
-|---------|-------------|-----------|
-| **core** | Lógica de patrones, eventos, Hap | `packages/core/` |
-| **webaudio** | Síntesis de audio, AudioWorklets | `packages/webaudio/` |
-| **mini** | Mini notación (sintaxis de Tidal) | `packages/mini/` |
-| **transpiler** | Convierte código a patrones | `packages/transpiler/` |
-| **tonal** | Teoría musical, notas, escalas | `packages/tonal/` |
-| **hydra** | Visuales con Hydra | `packages/hydra/` |
-| **midi** | Soporte para dispositivos MIDI | `packages/midi/` |
-| **csound** | Síntesis con Csound | `packages/csound/` |
-| **draw** | Dibujo y visualización 2D | `packages/draw/` |
-| **xen** | Sistemas de afinación alternativos | `packages/xen/` |
-
-Cada paquete tiene su propio `package.json` y puede tener tests en `test/`.
 
 ---
 
@@ -132,15 +105,6 @@ pnpm run test-coverage
 
 # Actualizar snapshots
 pnpm run snapshot
-```
-
-### Archivos de Test
-```
-test/
-├── tunes.test.mjs         # Snapshots de patrones en tunes.mjs
-├── examples.test.mjs      # Snapshots de ejemplos en documentación
-├── metadata.test.mjs      # Tests de metadatos
-└── runtime.mjs            # Utilidades para ejecutar código
 ```
 
 ### Qué SE PUEDE testear ✅
